@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"  thread-count="2" parallel="tests">
+    <test preserve-order="true" name= "Thread 1 tests">
+        <classes>
+            <class name="tests.friends.TestAddFriendRequest"> </class>
+            <class name="tests.friends.TestAddFriends"> </class>
+            <class name="tests.friends.TestRecommendedSubscriptions"> </class>
+        </classes>
+    </test>
+    <test preserve-order="true" name= "Thread 2 tests">
+        <classes>
+            <class name="tests.friends.TestFriendsSearch"> </class>
+            <class name="tests.TestFailed"> </class>
+            <class name="tests.friends.TestScrolling"> </class>
+        </classes>
+    </test>
+
+</suite>
